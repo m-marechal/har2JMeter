@@ -91,10 +91,10 @@ class Har2JMeter {
                                     }
                                 }
                                 stringProp(name: "HTTPSampler.domain", sampler.domain)
-                                stringProp(name: "HTTPSampler.port", 443)
+                                stringProp(name: "HTTPSampler.port", sampler.port)
                                 stringProp(name: "HTTPSampler.connect_timeout", "")
                                 stringProp(name: "HTTPSampler.response_timeout", "")
-                                stringProp(name: "HTTPSampler.protocol", "https")
+                                stringProp(name: "HTTPSampler.protocol", sampler.protocol)
                                 stringProp(name: "HTTPSampler.contentEncoding", "")
                                 stringProp(name: "HTTPSampler.path", sampler.path)
                                 stringProp(name: "HTTPSampler.method", sampler.method.toUpperCase())
